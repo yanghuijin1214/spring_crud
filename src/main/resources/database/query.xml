@@ -3,8 +3,8 @@
 <mapper namespace="database">
 
     <insert id="create">
-        insert into tbl_board (title, content, writer)
-        values(#{title},#{content},#{writer})
+        insert into tbl_board (bno,title, content, writer)
+        values(tmp_seq.NEXTVAL,#{title},#{content},#{writer})
     </insert>
     <select id="read" resultType="com.crud.model.Board">
         select bno, title, content, writer, regdate, viewcnt

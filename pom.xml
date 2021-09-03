@@ -14,6 +14,14 @@
         <org.springframework-version>5.2.3.RELEASE</org.springframework-version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>Spring Plugins</id>
+            <url>https://repo.spring.io/plugins-release/</url>
+        </repository>
+    </repositories>
+
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
